@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./gameApp.css" />
+  </head>
+  <body>
+    <div id="score-card">
+      <span id="user">0</span>
+      <span>-</span>
+      <span id="computer">0</span>
+    </div>
+
+    <div class="game-container">
+      <div class="user-ground">
+        <h1>You</h1>
+        <div id="user-selected-choice"></div>
+        <div class="options">
+          <img src="./assets/rock-logo.png" class="option" data-option="rock" />
+          <img
+            src="./assets/paper-logo.png"
+            class="option"
+            data-option="paper"
+          />
+          <img
+            src="./assets/scissors-logo.png"
+            class="option"
+            data-option="scissors"
+          />
+        </div>
+      </div>
+      <div class="vs-image">
+        <img src="./assets/vs.png" />
+      </div>
+      <div class="computer-ground">
+        <h1>Computer</h1>
+        <div id="computer-selected-choice"></div>
+      </div>
+    </div>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <p id="popup-message"></p>
+        <button id="restartButton">Play Again</button>
+      </div>
+    </div>
+    <script src="./gameApp.js"></script>
+  </body>
+</html>
